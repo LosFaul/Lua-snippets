@@ -7,7 +7,7 @@ local IDManagerXyZ = createIDManager(100)
 -- get a free id
 local id = IDManagerXyZ:get()
 
--- free id ids
+-- free an id
 IDManagerXyZ:free(xyzId)
 
 -- reset
