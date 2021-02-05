@@ -10,14 +10,18 @@ local id = IDManagerXyZ:get()
 -- free id ids
 IDManagerXyZ:free(xyzId)
 
--- get amout of free ids left
-local leftIDs = IDManagerXyZ:getLeftIDs()
-
 -- reset
 IDManagerXyZ:reset()
 
+-- get amout of free ids
+local leftIDs = IDManagerXyZ:getLeftIDs()
+
+-- get amout of used ids
+local usedIDs = IDManagerXyZ:getUsedIDs()
+
 
 ]]
+
 
 local function get(self)
     local stack, pointer = self.stack, self.stackPointer
@@ -39,16 +43,21 @@ local function free(self, id)
 end
 
 
-local function getLeftIDs(self)
-    return self.stackPointer
-end
-
-
 local function reset(self)
     local stack, max = self.stack, self.max
     for i = 1, max do
         stack[i] = max - i
     end
+end
+
+
+local function getLeftIDs(self)
+    return self.stackPointer
+end
+
+
+local function getUsedIDs(self)
+    return self.max - self.stackPointer
 end
 
 
