@@ -2,19 +2,19 @@
 
 
 -- Creating an Id manager
-local IdManagerXyZ = createIdManager(100)
+local IDManagerXyZ = createIDManager(100)
 
 -- get a free id
-local id = IdManagerXyZ:get()
+local id = IDManagerXyZ:get()
 
 -- free id ids
-IdManagerXyZ:free(xyzId)
+IDManagerXyZ:free(xyzId)
 
 -- get amout of free ids left
-local leftIDs = IdManagerXyZ:getLeftIDs()
+local leftIDs = IDManagerXyZ:getLeftIDs()
 
 -- reset
-IdManagerXyZ:reset()
+IDManagerXyZ:reset()
 
 
 ]]
