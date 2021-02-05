@@ -2,11 +2,15 @@
 
 --[[
 
+
+[, optional1, optional2, ...]
+
 local sb = createSandbox(environementData[, sandboxData, unloadFunction])
 
 sb:load(code)
 sb:destroy()
 sb:call(fn, ...)
+
 
 ]]
 
