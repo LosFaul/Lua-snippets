@@ -2,4 +2,4 @@
 
 Use them however you want, i don't take warranty or any responsibilities
 
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
