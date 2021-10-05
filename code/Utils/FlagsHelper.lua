@@ -2,7 +2,7 @@
 Warning:
     size stands for the number of possible states
     so, size has to be 2 or bigger
-    number has to be smaller than 2^54 or it's not unseable
+    number has to be smaller than 2^53 or it's not unseable
 
     Example at the bottom
 ]]
